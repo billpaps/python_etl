@@ -12,6 +12,12 @@ source venv/bin/activate
 
 ## Running the script
 
+First run the database migrations:
+
+```bash
+python migrate.py
+```
+
 For importing today's currencies run
 
 ```bash

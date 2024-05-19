@@ -2,4 +2,5 @@
 __pycache__/
 
 # SQLite db file
-test.sql
+test.sqlite:
+exchanges.sqlite:
