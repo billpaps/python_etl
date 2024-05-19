@@ -1,8 +1,5 @@
 # Python compiled code
 __pycache__/
 
-#  Virtual environment
-/venv/
-
 # SQLite db file
 test.sql

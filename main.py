@@ -25,7 +25,6 @@ worker = SQLite(engine)
 try:
     if len(sys.argv) == 1:
         start_date = date.today()
-        print(start_date)
 
         pipeline = OpenExchangePipeline(start_date=start_date)
         manager = PipelineManager(pipeline, worker)
