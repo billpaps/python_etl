@@ -21,6 +21,7 @@ class TestDateHelpers(unittest.TestCase):
             datetime(2024, 5, 1),
             datetime(2024, 5, 2),
             datetime(2024, 5, 3),
+            datetime(2024, 5, 4),
         ]
         self.assertEqual(list(DateHelpers.daterange(start_date, end_date)), expected_dates)
 

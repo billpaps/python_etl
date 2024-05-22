@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta
+import pytz # type: ignore
 
 # Helper functions for datetimes
 class DateHelpers:
@@ -13,9 +14,9 @@ class DateHelpers:
 
     @staticmethod
     def daterange(start_date: datetime, end_date: datetime):
-        for n in range(int((end_date - start_date).days)):
+        for n in range(int((end_date - start_date).days) + 1):
             yield start_date + timedelta(n)
 
     @staticmethod
     def timestamp_to_date(timestamp: int):
-        return datetime.fromtimestamp(timestamp).date()
+        return datetime.fromtimestamp(timestamp, pytz.UTC).date()
